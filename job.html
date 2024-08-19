@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+
+<style>
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    legend {
+        font-weight: bolder;
+    }
+
+    button {
+        border: 2px solid black;
+        border-radius: 49px;
+        background-color: #aea9a9;
+        color: white;
+        font-size: large;
+        padding: 3px 20px;
+        margin: 2px 625px;
+    }
+</style>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="./submit.html">
+        <fieldset>
+            <legend>Personal information</legend>
+            First name:<input type="text" required><br><br>
+            Last name:<input type="text" required><br><br>
+            E-Mail:<input type="email" required><br><br>
+            Phone number:<input type="number" required><br><br>
+            Date of Birth:
+            <input type="date"><br><br>
+            gender:<br>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">other<br>
+            <h3>Address</h3>
+            City:<input type="text"><br><br>
+            State:<input type="text"><br><br>
+            Postal code: <input type="text"><br><br>
+            <label>Country:</label>
+            <select style="width: 10%;">
+                <optgroup label="Country">
+                    <option value="india">INDIA</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </optgroup>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label>Education:</label>
+            <select style="width:10%;">
+                <optgroup label="Education">
+                    <option value="Highschool">High School</option>
+                    <option value="bachelor">Bachelor's</option>
+                    <option value="Masters">Masters</option>
+                    <option value="phd">PhD</option>
+                </optgroup>
+            </select><br><br>
+            Institution Name:<input type="text"><br><br>
+            GraduationYear:<input type="number"><br><br>
+            Certifications:<input type="file"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            Current Job<input type="text"><br><br>
+            Company Name<input type="text"><br><br>
+            Location <input type="text"><br><br>
+            <select style="width: 7%;">
+                <optgroup label="experience">
+                    <option value="0yrs">0Years</option>
+                    <option value="2yrs">0-2Years</option>
+                    <option value="2-4yrs">2-4Years</option>
+                    <option value="5-8yrs">5-8Years</option>
+                    <option value="above8">more than 8 Years</option>
+                </optgroup>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            Technical skills<input type="text"><br><br>
+            Languages Spoken <input type="text"><br><br>
+            soft Skills<input type="text"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Job Preferences</legend>
+            <label>Job Type:</label><br><br>
+            <input type="checkbox" name="jobtype" value="parttime">Part-time<br><br>
+            <input type="checkbox" name="jobtype" value="Fulltime">Full-time<br><br>
+            <input type="checkbox" name="jobtype" value="internship">Internship<br><br>
+            <label>Upload Resume</label><br>
+            <input type="file" required>
+        </fieldset><br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

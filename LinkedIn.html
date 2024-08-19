@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+
+<style>
+    body {
+        margin: 5% 23%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: bolder;
+    }
+
+    h2 {
+        font-size: bold;
+        text-align: center;
+    }
+
+    button {
+        border: 2px solid black;
+        border-radius: 49px;
+        background-color: blue;
+        color: white;
+        font-size: large;
+        padding: 3px 20px;
+    }
+    legend{
+        font-size: large;
+    }
+</style>
+</head>
+<body>
+    <h1>LinkedIn Registration Form</h1>
+    <form action="./loginpage.html">
+        <fieldset>
+            <legend>Details</legend>
+            <h2>LinkedIn</h2>
+            <h3>Create an Account</h3>
+            <h3>Personal Information</h3>
+            <label style="padding: 22px 56px;" for="fname">First name</label>
+            <label style="padding: 22px 56px;" for="lname">Last name</label><br>
+            <input style="margin:5px -1px;" type="text" name="fname" id="fname" required>
+            <input style="margin:5px 20px;" type="text" name="lname" id="lname" required> <br>
+            <label style="padding: 22px 56px;" for="e-mail">E-Mail</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label style="padding: 22px 40px;" for="number">Phone number</label><br>
+            <input style="margin:6px 1px;" type="number" name="number" id="number" required><br>
+            <label style="padding: 22px 35px;" for="date">Date of Birth</label><br>
+            <input style="margin: 9px 3px; width: 21%;" type="date" name="date" id="date"><br>
+            <label style=" padding:22px 56px;" for="gender">Gender:</label><br>
+            <input style="margin-top: 2%;" type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">other<br><br>
+            <label for="edu">Education:</label><br>
+            <input  type="text" name="edu" id="edu" placeholder="e.g: btech  " required><br>
+            <label  for="job">Job:</label><br>
+            <input type="text" name="job" id="job"><br>
+            <label>State:</label><br>
+            <input type="text"><br>
+            <label> City:</label><br>
+            <input type="text">
+            <h3>Official Information</h3>
+            <label for="username">Username:</label><br>
+            <input type="email" name="Username" id="username" placeholder="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="password" required><br>
+            <label for="repassword">Re-enter Password:</label><br>
+            <input type="password" name="repassword" id="repassword" placeholder="re-enter password" required><br><br>
+            <button>Join Now</button>
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

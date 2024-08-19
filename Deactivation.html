@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation Form</title>
+    <style>
+        body {
+            margin: 5% 30%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: bolder;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-size: large;
+        }
+
+        select {
+            width: 40%;
+        }
+
+        button {
+            border: 2px solid black;
+            border-radius: 49px;
+            background-color: #aea9a9;
+            color: white;
+            font-size: large;
+            padding: 3px 20px;
+            margin: 11px 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Deactivation Form</h1>
+    <form action="./Acknowledgement.html">
+        <fieldset>
+            <h2>Account Deactivation</h2>
+            <h4>We're sorry to see you go! Please take a moment to tell us why you're deactivating your account.</h4>
+            <h4>Reason for Deactivation</h4>
+            <label for="Deactivation">Why are you deactivating your account?</label><br>
+            <input type="radio" name="Deactivation" id="Deactivation">I spend too much time on the platform<br>
+            <input type="radio" name="Deactivation" id="Deactivation">Privacy concerns<br>
+            <input type="radio" name="Deactivation" id="Deactivation">I don't find the content engaging<br>
+            <input type="radio" name="Deactivation" id="Deactivation">I'm experiencing technical issues<br>
+            <input type="radio" name="Deactivation" id="Deactivation">I have multiple accounts<br>
+            <input type="radio" name="Deactivation" id="Deactivation">I'm switching to a different platform<br>
+            Other:<input type="text" id="Deactivation"><br><br>
+            <label>Is there anything we could do to improve your experience?</label><br><br>
+            <input type="text"><br><br>
+            <label> Would you consider rejoining in the future?</label><br><br>
+            <select>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="maybe">Maybe</option>
+            </select><br><br>
+            <label> How satisfied were you with our platform overall?</label><br><br>
+            <select>
+                <option value="Very Satisfied">Very Satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very Dissatisfied">Very Dissatisfied</option>
+            </select><br><br>
+            <label for="Deactivating">Are you deactivating or permanently deleting your account?</label><br><br>
+            <input type="radio" name="Deactivating" id="Deactivating">Deactivate my account (You can reactivate it
+            anytime by logging back in)<br>
+            <input type="radio" name="Deactivating" id="Deactivating">Permanently delete my account<br>
+            <h4>Final Confirmation</h4>
+            <label for="deactivate">Are you sure you want to deactivate your account?</label><br><br>
+            <input type="radio" name="deactivate" id="deactivate">Yes, I want to deactivate my account<br>
+            <input type="radio" name="deactivate" id="Deactivate">No, take me back to my account<br>
+            <h4>Additional Comments</h4>
+            <textarea style="width: 500px;height: 74px;"></textarea><br><br>
+            <label for="username">Username:</label><br>
+            <input type="email" name="Username" id="username" placeholder="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="password" required><br>
+            <label for="repassword">Re-enter Password:</label><br>
+            <input type="password" name="repassword" id="repassword" placeholder="re-enter password" required><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

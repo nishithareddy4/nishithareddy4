@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie review</title>
+    <style>
+        body {
+            margin: 5% 7%;
+            background-color:#a2a298;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        textarea {
+            width: 248px;
+            height: 78px;
+        }
+
+        label {
+            font-size: xx-large;
+        }
+
+        button {
+            border: 2px solid black;
+            border-radius: 49px;
+            background-color: #aea9a9;
+            color: white;
+            font-size: large;
+            padding: 3px 20px;
+            margin: 11px 500px;
+
+        }
+        .container{
+            background-image: url(./sitaramam.jpg);
+            background-size: cover;
+        }
+    
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <h1>Movie Review</h1>
+    <form>
+        <fieldset>
+            <h2>SITA RAMAM MOVIE</h2>
+            <label><b>Title:</b>Sita Ramam</label><br>
+            <label><b>Starring:</b>Dulquer Salmaan,Mrunal Thakur,Rashmika Mandanna</label><br>
+            <label><b>Story&Directed by:</b>Hanu Raghavapudi</label><br>
+            <label><b>Music by:</b>Vishal Chandrasekhar</label><br>
+            <label><b>Genre:</b> Romantic Drama</label><br>
+            <label><b>Languages:</b>Telugu,Hindi,Tamil,Malayalam </label><br>
+            <label><b>Where to Watch:</b>Amazon Prime Video,Disney+ Hotstar</label><br>
+            <label for="rating"><b>Rate this movie:</b></label>
+            <input type="number" name="rating" id="rating" min="1" max="5" step="1"><br><br>
+            <textarea placeholder="Write your review here"></textarea><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
